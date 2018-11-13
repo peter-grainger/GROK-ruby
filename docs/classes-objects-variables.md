@@ -10,7 +10,7 @@
 
 Ruby doesn't declare a keyword before declaring a variable
 
-![variables.rb](../examples/variables.rb)
+[variables.rb](../examples/variables.rb)
 
 ```ruby
 foo = "bar" # => "bar"
