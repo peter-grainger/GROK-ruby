@@ -40,4 +40,40 @@ class Animal
 end
 ```
 
+### Class Structure Example
+
+This script will fail with the error that `undefined method 'heads'`.  See if you can fix it 🛠
+
+```bash
+$ ruby examples/class-structure.rb
+
+#<Animal:0x00007fa0eb077108 @typeOfBeast="Animal", @legs=4, @heads=1>
+Animal
+4 legs
+Traceback (most recent call last):
+examples/class-structure.rb:26:in `<main>': undefined method `heads' for #<Animal:0x00007fa0eb077108> (NoMethodError)
+```
+
 ## Inheritance
+
+Ruby supports single inheritance.  Multiple inheritance is not supported
+
+```ruby
+# Generic Animal class
+class Animal
+    attr_accessor :typeOfBeast
+    def initialize
+        @typeOfBeast = "Animal"
+    end
+end
+
+# Specific Dog class
+class Dog < Animal
+    attr_accessor :typeOfAnimal
+    def initialize
+        # Call to Animal constructor
+        super
+        @typeOfAnimal = "Dog"
+    end
+end
+```

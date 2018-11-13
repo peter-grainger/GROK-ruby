@@ -82,7 +82,7 @@ String
 Use Rspec to run the challenges
 
 ```bash
-bin/rspec --format doc
+bin/rspec spec/challenges/objects-variables_spec.rb --format doc
 ```
 
-fix [./challenges/objects-variables.rb](./challenges/object-variables.rb)
+fix [./challenges/objects-variables.rb](./challenges/object-varia✔bles.rb) so the tests pass ✔️

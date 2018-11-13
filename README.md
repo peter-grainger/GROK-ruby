@@ -2,7 +2,7 @@
 
 Incremental hands on learning of ruby from zero knowledge to dangerous.
 
-This repo is more code than writing and aimed at programmers who already have some knowledge of object oriented programming and want to get started.
+This repository is more code than writing and aimed at impatient programmers who already have some knowledge of object oriented programming and want to start hacking.
 
 ## Prerequisites
 
@@ -17,16 +17,16 @@ Clone this repository
 git clone git@github.com:peter-grainger/GROK-ruby.git
 ```
 
+Change directory into folder
+
+```bash
+cd GROK-ruby
+```
+
 Install gem dependencies
 
 ```bash
 bundle install --binstubs
-```
-
-change into folder
-
-```bash
-cd GROK-ruby
 ```
 
 ## Lessons

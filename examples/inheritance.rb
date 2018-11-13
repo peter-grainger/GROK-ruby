@@ -1,20 +1,18 @@
+# Generic Animal class
 class Animal
+    attr_accessor :typeOfBeast
     def initialize
         @typeOfBeast = "Animal"
     end
-
-    def typeOfBeast
-        @typeOfBeast
-    end
 end
 
+# Specific Dog class
 class Dog < Animal
+    attr_accessor :typeOfAnimal
     def initialize
+        # Call to Animal constructor
         super
         @typeOfAnimal = "Dog"
-    end
-    def typeOfAnimal
-        @typeOfAnimal
     end
 end
 
