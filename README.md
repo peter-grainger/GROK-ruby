@@ -37,4 +37,4 @@ Run any of the examples by using the keyword `ruby` followed by the file name.  
 ruby examples/variables.rb
 ```
 
-[Start the exercises](./exercises/classes-objects-variables)
+[Start the exercises](./exercises/classes-objects.md)
