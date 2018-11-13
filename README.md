@@ -7,6 +7,7 @@ This repo is more code than writing and aimed at programmers who already have so
 ## Prerequisites
 
 - Ruby v2.5+
+- Bundler
 
 ## Getting Started
 
@@ -14,6 +15,12 @@ Clone this repo
 
 ```bash
 git clone git@github.com:peter-grainger/GROK-ruby.git
+```
+
+Install gem dependencies
+
+```bash
+bundle install --binstubs
 ```
 
 change into folder
