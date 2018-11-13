@@ -11,7 +11,7 @@ This repo is more code than writing and aimed at programmers who already have so
 
 ## Getting Started
 
-Clone this repo
+Clone this repository
 
 ```bash
 git clone git@github.com:peter-grainger/GROK-ruby.git

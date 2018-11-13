@@ -10,7 +10,7 @@ All classes inherit from [BasicObject](https://ruby-doc.org/core-2.5.3/BasicObje
 
 Some key rubyisms:
 
-- contructors have the function name `initialize`
+- constructors have the function name `initialize`
 - instance variables have the prefix `@`
 - Getters automatically created with the keyword `attr_reader`
 - Setters automatically created with the keyword `attr_writer`
