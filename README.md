@@ -22,4 +22,12 @@ change into folder
 cd GROK-ruby
 ```
 
-Start the exercises
+## Lessons
+
+Run any of the examples by using the keyword `ruby` followed by the file name.  e.g.
+
+```shell
+ruby examples/variables.rb
+```
+
+[Start the exercises](./exercises/classes-objects-variables)
