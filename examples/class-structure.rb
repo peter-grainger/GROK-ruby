@@ -10,12 +10,19 @@ class Animal
         @legs = 4
         # Heads can't be accessed outside of this class
         @heads = 1
+        @tails = 1
     end
 
-    # Can only access legs via function
+    # Can only access legs via method
     def legs
         @legs.to_s + " legs"
     end
+
+    def tails
+        @tails
+    end
+
+    private :tails
 end
 
 animal = Animal.new

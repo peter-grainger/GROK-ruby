@@ -49,9 +49,9 @@ b = a.clone
 b.object_id # => 70237001505260 It's different!!!
 ```
 
-Note that the `.clone` function is a shallow copy, nested references **do not** get copied as values then get copied as references
+Note that the `.clone` method is a shallow copy, nested references **do not** get copied as values then get copied as references
 
-Each object created inherits a large amount of library functions.  The official API documentation: <https://ruby-doc.org/stdlib-2.5.3/>.
+Each object created inherits a large amount of library methods.  The official API documentation: <https://ruby-doc.org/stdlib-2.5.3/>.
 
 ### Objects Example
 
@@ -66,16 +66,14 @@ String
 
 ## TL;DR
 
-### Books
-
 ### Sites
 
-[Pragmatic Ruby - classes, variables and functions](http://ruby-doc.com/docs/ProgrammingRuby/html/tut_classes.html)
+[Pragmatic Ruby - classes, variables and methods](http://ruby-doc.com/docs/ProgrammingRuby/html/tut_classes.html)
 [Ruby Monk - objects chapter](https://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects)
 
 ### Videos
 
-[Ruby Fundamentals](https://app.pluralsight.com/player?course=ruby-fundamentals&author=alex-korban&name=ruby-fundamentals-module1&clip=5&mode=live)
+[Ruby Fundamentals - variables, nil, methods and scope](https://app.pluralsight.com/player?course=ruby-fundamentals&author=alex-korban&name=ruby-fundamentals-module1&clip=5&mode=live)
 
 ## Challenge 🎠
 

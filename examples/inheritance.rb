@@ -1,8 +1,13 @@
 # Generic Animal class
 class Animal
-    attr_accessor :typeOfBeast
+    attr_reader :typeOfBeast
+    protected :typeOfBeast
     def initialize
         @typeOfBeast = "Animal"
+    end
+    
+    def whichType
+        @typeOfBeast
     end
 end
 
@@ -17,7 +22,7 @@ class Dog < Animal
 end
 
 animal = Animal.new
-puts animal.typeOfBeast
+# animal.typeOfBeast Fails because it is protected
 
 dog = Dog.new
-puts "A "+dog.typeOfAnimal+" is a type of "+dog.typeOfBeast
+puts "A "+dog.typeOfAnimal+" is a type of "+dog.whichType
