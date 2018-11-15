@@ -83,4 +83,8 @@ Use Rspec to run the challenges
 bin/rspec spec/challenges/objects-variables_spec.rb --format doc
 ```
 
-fix [./challenges/objects-variables.rb](./challenges/object-variables.rb) so the tests pass ✔️
+fix [../lib/challenges/objects-variables.rb](../lib/challenges/object-variables.rb) so the tests pass ✔️
+
+## Go to next challenge
+
+[Classes](./classes.md)

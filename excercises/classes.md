@@ -124,4 +124,8 @@ Use Rspec to run the challenges
 bin/rspec spec/challenges/classes_spec.rb --format doc
 ```
 
-fix [./challenges/classes.rb](./challenges/classes.rb) so the tests pass ✔️
+fix [../lib/challenges/challenges/classes.rb](../lib/challenges/challenges/classes.rb) so the tests pass ✔️
+
+## Go to next challenge
+
+[Flow Control](./flow-control.md)
