@@ -159,4 +159,4 @@ fix [../lib/challenges/flow-control.rb](../lib/challenges/flow-control.rb) so th
 
 ## Go to next challenge
 
-[Classes](./iterators-blocks.md)
+[Iterators and blocks](./iterators-blocks.md)

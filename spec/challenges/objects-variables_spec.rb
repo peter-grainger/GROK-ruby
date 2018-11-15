@@ -1,6 +1,6 @@
 require 'challenges/objects-variables'
 
-RSpec.describe nil, 'Variable Challenge' do
+describe 'Variable Challenge' do
         it "assign the word foo to a variable" do
             expect(assign_foo_to_bar).to eq "bar"
         end

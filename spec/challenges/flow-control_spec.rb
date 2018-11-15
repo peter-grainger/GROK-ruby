@@ -1,6 +1,6 @@
 require 'challenges/flow-control.rb'
 
-RSpec.describe nil, "Flow Control Challenge" do
+describe "Flow Control Challenge" do
     context "Conditional Initialization" do
         it "should initialize variable that doesn't exist" do
             expect(initialValue nil).to eq "bar"

@@ -1,6 +1,6 @@
 require "challenges/classes.rb"
 
-describe RSpec.describe Ship, "Class Structure Challenge" do
+describe Ship, "Class Structure Challenge" do
     it "initialise a class with an attribute shout with a value of AHOY" do
         ship = Ship.new
         expect(ship.shout).to eq "AHOY"
