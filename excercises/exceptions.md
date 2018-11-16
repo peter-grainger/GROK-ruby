@@ -74,3 +74,31 @@ def read_file
     raise AwesomeBestError, "I <3 errors"
 end
 ```
+
+## TL;DR
+
+### Books
+
+[Pragmatic Ruby - exceptions](http://ruby-doc.com/docs/ProgrammingRuby/html/tut_exceptions.html)
+
+### Exercises
+
+[Ruby Monk - exceptions chapter](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/41-exceptions)
+
+### Videos
+
+[Ruby Fundamentals - Handling Exceptions](https://app.pluralsight.com/player?course=ruby-fundamentals&author=alex-korban&name=ruby-fundamentals-module3&clip=10&mode=live)
+
+[Ruby Fundamentals - Raising Exceptions](https://app.pluralsight.com/player?course=ruby-fundamentals&author=alex-korban&name=ruby-fundamentals-module3&clip=9&mode=live)
+
+[Ruby Fundamentals - Ensure and else](https://app.pluralsight.com/player?course=ruby-fundamentals&author=alex-korban&name=ruby-fundamentals-module3&clip=10&mode=live)
+
+## Challenge 🎠
+
+Use Rspec to run the challenges
+
+```bash
+bin/rspec spec/challenges/exceptions_spec.rb --format doc
+```
+
+fix [../lib/challenges/exceptions.rb](../lib/challenges/exceptions.rb) so the tests pass ✔️
