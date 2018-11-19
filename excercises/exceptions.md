@@ -102,3 +102,7 @@ bin/rspec spec/challenges/exceptions_spec.rb --format doc
 ```
 
 fix [../lib/challenges/exceptions.rb](../lib/challenges/exceptions.rb) so the tests pass ✔️
+
+## Go to next section
+
+[Methods](./methods)

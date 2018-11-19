@@ -62,6 +62,6 @@ bin/rspec spec/challenges/iterators-blocks_spec.rb --format doc
 
 fix [../lib/challenges/iterators-blocks.rb](../lib/challenges/iterators-blocks.rb) so the tests pass ✔️
 
-## Go to next challenge
+## Go to next section
 
 [Exceptions](./exceptions.md)

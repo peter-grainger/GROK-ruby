@@ -153,4 +153,8 @@ Use Rspec to run the challenges
 bin/rspec spec/challenges/methods_spec.rb --format doc
 ```
 
-fix [../lib/challenges/methods.rb](../lib/challenges/methods.rb) so the tests pass ✔️
+fix [../lib/challenges/methods.rb](../lib/challenges/methods.rb) so the tests pass ✔
+
+## Go to next section
+
+[Blocks](./blocks)
