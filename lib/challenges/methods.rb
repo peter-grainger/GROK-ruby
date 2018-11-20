@@ -1,24 +1,11 @@
-def zoo(merkat, monkey, lion = 4, tiger)
-    {
-        merkat: merkat,
-        monkey: monkey,
-        lion: lion,
-        tiger: tiger
-    }
+def zoo # Add arguments here
+    # Add return here
 end
 
-def add_animals(type, *animals)
-    {
-        type: type,
-        animals: animals
-    }
+def add_animals # Add arguments here
+    # Add return here
 end
 
-def add_animal(animal, type: 'unknown', name: 'unknown', **extra_attribtes)
-    base_attributes = {
-        animal: animal,
-        type: type,
-        name: name,
-    }
-    base_attributes.merge(extra_attribtes)
+def add_animal # Add arguments here
+    # Add return here
 end
