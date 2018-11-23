@@ -27,7 +27,7 @@ file://lib/examples/block_check.rb
 If the method call doesn't include the block the action doesn't take place.
 
 ```ruby
-file://spec/examples/block_check.rb
+file://spec/examples/block_check_spec.rb
 ```
 
 ## Block local variables
@@ -37,7 +37,7 @@ Rubyism:
 - Block arguments shadow variables in outer scope
 - Variables defined in the block don't shadow, they overwrite!
 
-In this example the block executed in the middle of the method increment_by_one defines the variable `current_number` this overwrites the variable defined in the scope also called `current number` which is probably not as intended.
+In this example the block executed in the middle of the method `increment_by_one` defines the variable `current_number` this overwrites the variable defined in the scope also called `current number` which is probably not as intended.
 
 ```ruby
 def execute_block(number)
@@ -86,7 +86,27 @@ Prefer Lambdas over Procs as they are less error prone.  The following example s
 file://lib/examples/lambdas.rb
 ```
 
-### Cool applications of a proc
+## Using Proc in a case statement
+
+Use a proc within a case statement to inject some logic into the statement beyond the simple string equals.
+
+```ruby
+file://lib/examples/block_case.rb
+```
+
+If the block returns true for a condition the then statement will be ran.
+
+```ruby
+file://spec/examples/block_case_spec.rb
+```
+
+## Converting a symbol to a proc
+
+A [Symbol](https://docs.ruby-lang.org/en/2.5.0/Symbol.html) converts to a proc with the `&` operator.  This enables a concise map.  Suppose you want to round up an array of numbers.  One solution would be to use a `map` and pass a block which calls the `ceil` function on each value.  To achieve the same result use the `:ceil` symbol, convert to a proc and pass that argument to the map method.
+
+```ruby
+file://lib/examples/symbol_to_proc.rb
+```
 
 ## TL;DR
 
@@ -113,3 +133,7 @@ bin/rspec spec/challenges/blocks_spec.rb --format doc
 ```
 
 fix [../lib/challenges/challenges/blocks.rb](../lib/challenges/challenges/blocks.rb) so the tests pass ✔️
+
+## That's it!
+
+return back to the [home](./)

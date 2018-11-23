@@ -64,4 +64,4 @@ fix [../lib/challenges/iterators-blocks.rb](../lib/challenges/iterators-blocks.r
 
 ## Go to next section
 
-[Exceptions](./exceptions.md)
+[Exceptions](./exceptions)

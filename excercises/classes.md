@@ -128,4 +128,4 @@ fix [../lib/challenges/challenges/classes.rb](../lib/challenges/challenges/class
 
 ## Go to next challenge
 
-[Flow Control](./flow-control.md)
+[Flow Control](./flow-control)

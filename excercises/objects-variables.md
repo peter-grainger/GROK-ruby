@@ -57,4 +57,4 @@ fix [../lib/challenges/objects-variables.rb](../lib/challenges/object-variables.
 
 ## Go to next challenge
 
-[Classes](./classes.md)
+[Classes](./classes)

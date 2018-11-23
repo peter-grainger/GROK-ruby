@@ -2,7 +2,27 @@
 
 Incremental hands on learning of ruby from zero knowledge to dangerous.
 
-This repository is more code than writing and aimed at impatient programmers who already have some knowledge of object oriented programming and want to start hacking.
+Use the lessons and code together, it's the easiest way to concrete your knowledge.  Most of the code found in the lessons are in this repo.  This page is also a website hosted at <https://grok.now.sh> and a repo hosted at <https://github.com/peter-grainger/GROK-ruby>.  Checkout the code and follow along, hack about with the examples break the test, fix them again and try the challenges.
+
+The lessons also have links to other sites that give more insight.  All sections have a `tl;dr` section.
+
+## Lessons
+
+[Objects and variables](./objects-variables)
+[Classes](./classes)
+[Exceptions](./exceptions)
+[Flow control](./flow-control)
+[Iterators and blocks](./iterators-blocks)
+[Methods](./methods)
+[More on Blocks](./blocks)
+
+## Run the examples
+
+Run any of the examples by using the keyword `ruby` followed by the file name.  e.g.
+
+```shell
+ruby examples/variables.rb
+```
 
 ## Prerequisites
 
@@ -29,22 +49,13 @@ Install gem dependencies
 bundle install --binstubs
 ```
 
-## Lessons
+## Contributing
 
-Run any of the examples by using the keyword `ruby` followed by the file name.  e.g.
-
-```shell
-ruby examples/variables.rb
-```
-
-[Objects and variables](./exercises/objects-variables.md)
-[Classes](./exercises/classes.md)
-
-## Developing
-
-To convert this documentation to HTML use the gem code_in_docs.
+If you want to add an example or correct something in the docs then you might want to build the html files to see if it works correctly.
 
 To build the html files install the `code_in_docs` gem run the build script
+
+WARNING: this will also deploy to now.sh make sure you don't put anything in there that you want to keep secret.
 
 ```bash
 gem install code_in_docs
