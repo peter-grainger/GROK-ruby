@@ -8,13 +8,13 @@ The lessons also have links to other sites that give more insight.  All sections
 
 ## Lessons
 
-[Objects and variables](./objects-variables)
-[Classes](./classes)
-[Exceptions](./exceptions)
-[Flow control](./flow-control)
-[Iterators and blocks](./iterators-blocks)
-[Methods](./methods)
-[More on Blocks](./blocks)
+- [Objects and variables](./objects-variables)
+- [Classes](./classes)
+- [Exceptions](./exceptions)
+- [Flow control](./flow-control)
+- [Iterators and blocks](./iterators-blocks)
+- [Methods](./methods)
+- [More on Blocks](./blocks)
 
 ## Run the examples
 
