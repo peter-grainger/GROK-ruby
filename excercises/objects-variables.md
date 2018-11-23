@@ -8,17 +8,10 @@
 
 ## Variables
 
-You can not set the scope or the type.  i.e. `const` or `String`
+You can not set the scope or the type.  i.e. `const` or `String` of a variable.  variables are private by default
 
 ```ruby
-foo = "bar" # => "bar"
-```
-
-### Variable Example
-
-```bash
-$ ruby examples/variables.rb
-"bar"
+file://lib/examples/variables.rb
 ```
 
 ## Objects
@@ -26,43 +19,20 @@ $ ruby examples/variables.rb
 A number, boolean and string are all objects in Ruby
 
 ```ruby
-"bar".class # => String
-3.class # => Integer
-false.class # => FalseClass
+file://lib/examples/objects.rb
 ```
 
-The above is shorthand syntax for creating the object and initializing it with a value.  The string object provides a constructor which is an ali
-
-```ruby
-String.new("bar") # => "bar"
-"bar" # => "bar"
-```
+The above is shorthand syntax for creating the object and initializing it with a value.  The string object provides a constructor which is an alias
 
 When assigning an object to a variable the variable holds a reference to the object.  It does not create a new object with the same value
 
 ```ruby
-a = "foo"
-a.object_id # => 70237022091420
-b = a
-b.object_id # => 70237022091420
-b = a.clone
-b.object_id # => 70237001505260 It's different!!!
+file://lib/examples/object-reference.rb
 ```
 
 Note that the `.clone` method is a shallow copy, nested references **do not** get copied as values then get copied as references
 
 Each object created inherits a large amount of library methods.  The official API documentation: <https://ruby-doc.org/stdlib-2.5.3/>.
-
-### Objects Example
-
-```bash
-$ ruby examples/objects.rb
-String
-Integer
-FalseClass
-String
-...
-```
 
 ## TL;DR
 

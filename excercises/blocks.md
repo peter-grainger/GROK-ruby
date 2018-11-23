@@ -4,38 +4,30 @@ Blocks and lamdbas are discrete pieces of code that aren't attached to an object
 
 ## Yield
 
-To run a block use the keyword `yield`.  This runs the implicit block defined within the curly braces `{}`.
+To run a block use the keyword `yield`.  This runs the implicit block defined within the curly braces `{}`.  This implicit block is anonomous and **can't be assigned to a variable**
+
+Convert an implicit block to an explicit block using the `&` operator.  This converts it to a `Proc` object which has the `send` method to execute the block and a name assigned to it to pass around
 
 ```ruby
-def execute_block(number)
-    yield number
-end
-
-puts execute_block(1) { |number| number + 1 } # => outputs 2
+file://lib/examples/block_yield.rb
 ```
 
-Convert an implicit block to an explicit block using the `&` operator.  This converts it to a `Proc` object which has the `send` method to execute the block.
+The number argument is passed in the normal way in brackets `(2)` the block is passed by adding it **after** the method `execute_block(number) {|number| number + 1}`
+ 
+```ruby
+file://spec/examples/block_yield_spec.rb
+```
+
+What if a block isn't defined by accident?  Ruby has a way to guard against this with the special method `block_given?` which checks if a block has been passed.
 
 ```ruby
-def execute_block_argument(number, &block)
-    block.call number
-end
-
-puts execute_block_argument(1) { |number| number + 1 } # => outputs 2
+file://lib/examples/block_check.rb
 ```
 
-No block causes an Error on invocation of yield
+If the method call doesn't include the block the action doesn't take place.
 
 ```ruby
-puts execute_block_argument(1) # => ERROR!
-```
-
-### Default parameter example
-
-```bash
-$ ruby examples/block_yield.rb
-2
-3
+file://spec/examples/block_check.rb
 ```
 
 ## Block local variables
@@ -78,6 +70,23 @@ $ ruby examples/block-local-variables.rb
 current number: 2 new number: 2 original number 1
 current number: 7 new number: 2 original number 1
 ```
+
+### Lambdas
+
+Lambdas are pretty much the same as procs with some key differences:
+
+- lambdas are strict about amount of arguments
+- `return` executed in outer scope for proc (so don't use)
+- `break` isn't allowed outside a loop in a proc
+- lambda only `break`'s or `return`'s out of that lambda to the outer scope
+
+Prefer Lambdas over Procs as they are less error prone.  The following example shows how a break can have unintended side effects.
+
+```bash
+file://lib/examples/lambdas.rb
+```
+
+### Cool applications of a proc
 
 ## TL;DR
 

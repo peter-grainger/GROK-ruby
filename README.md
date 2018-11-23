@@ -39,3 +39,14 @@ ruby examples/variables.rb
 
 [Objects and variables](./exercises/objects-variables.md)
 [Classes](./exercises/classes.md)
+
+## Developing
+
+To convert this documentation to HTML use the gem code_in_docs.
+
+To build the html files install the `code_in_docs` gem run the build script
+
+```bash
+gem install code_in_docs
+./build-docs.sh
+```
