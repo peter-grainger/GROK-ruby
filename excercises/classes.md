@@ -18,12 +18,16 @@ Some key rubyisms:
 - Instance variables are by default private
 - Instance methods are by default public
 - Methods can have access modifier `private`
+- Class variables prefixed with `@@`
 
 ```ruby
 # Definition of an Animal Class
 class Animal
     # Shortcut to create a getter for variable
     attr_reader :typeOfBeast
+
+    # class 
+    @@name_prefix = 'Animal: '
 
     # Constructor
     def initialize
